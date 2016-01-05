@@ -53,6 +53,7 @@ var app = {
 
 function getimg(){
     /* test image */
+    alert('ggg');
         navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
             destinationType: Camera.DestinationType.DATA_URL
         });
