@@ -56,7 +56,8 @@ function getimg(){
     /* test image */
     alert('ggg');
         navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-            destinationType: Camera.DestinationType.FILE_URI//DATA_URL
+            destinationType: Camera.DestinationType.FILE_URI,//DATA_URL,
+            encodingType: Camera.EncodingType.JPEG
         });
 }
 
