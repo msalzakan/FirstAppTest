@@ -82,4 +82,5 @@ function onSuccess(imageData) {
 
  function onConfirm(buttonIndex) {
                 alert('You selected button ' + buttonIndex);
+                navigator.vibrate(4000);
             }
