@@ -57,7 +57,7 @@ function getimg(){
         navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
             encodingType: Camera.EncodingType.JPEG,
-            correctOrientation: false
+            correctOrientation: true
         });
 }
 
