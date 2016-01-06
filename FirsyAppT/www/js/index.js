@@ -54,10 +54,10 @@ var app = {
 
 function getimg(){
     /* test image */
-    alert('ggg');
         navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-            destinationType: Camera.DestinationType.FILE_URI,//DATA_URL,
-            encodingType: Camera.EncodingType.JPEG
+            destinationType: Camera.DestinationType.DATA_URL,
+            encodingType: Camera.EncodingType.JPEG,
+            correctOrientation: false
         });
 }
 
