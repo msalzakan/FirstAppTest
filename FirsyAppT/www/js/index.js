@@ -62,7 +62,8 @@ function getimg(){
 
 function onSuccess(imageData) {
             var image = document.getElementById('myImage');
-            image.src = "data:image/jpeg;base64," + imageData;
+          //  image.src = "data:image/jpeg;base64," + imageData;
+          image.src = imageData;
         }
         
         function onFail(message) {
