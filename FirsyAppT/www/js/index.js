@@ -65,8 +65,21 @@ function onSuccess(imageData) {
             var image = document.getElementById('myImage');
             image.src = "data:image/jpeg;base64," + imageData;
           //image.src = imageData;
+          
+         
+
+            navigator.notification.confirm(
+                'You are the winner!', // message
+                 onConfirm,            // callback to invoke with index of button pressed
+                'Game Over',           // title
+                ['Restart','Exit']     // buttonLabels
+            );
         }
         
         function onFail(message) {
             alert('Failed because: ' + message);
         }
+
+ function onConfirm(buttonIndex) {
+                alert('You selected button ' + buttonIndex);
+            }
